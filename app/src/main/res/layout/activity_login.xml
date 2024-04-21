@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login"
+    android:background="@drawable/img">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:alpha="0.8"
+        android:background="#EAE8E8"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Welcome\nHooman!"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edt_border"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4pt"
+        android:layout_marginLeft="4pt"
+        android:layout_marginTop="10pt"
+        android:hint="Username"/>
+
+    <RelativeLayout
+
+        android:layout_marginTop="10pt"
+        android:layout_marginLeft="4pt"
+        android:layout_marginRight="4pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edt_border"
+            android:id="@+id/password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"/>
+        <ImageView
+            android:id="@+id/show_pass_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:alpha=".5"
+            android:onClick="ShowHidePass"
+            android:padding="5dp"
+            android:src="@drawable/show" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4pt"
+        android:layout_marginLeft="4pt"
+        android:layout_marginTop="10pt"
+        android:text="LOG IN"/>
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4pt"
+        android:layout_marginLeft="4pt"
+        android:layout_marginTop="10pt"
+        android:text="SIGN UP"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/bt_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

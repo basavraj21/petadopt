@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="true"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About us:"
+    android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our pet adoption app is an easy-to-use platform that connects animal lovers with shelters and rescue organizations. The app allows users to search for Pets based on type and gender It also provides Connects you with the owner so you can know everything about the pet before the adoption. The app simplifies the adoption process and helps dogs /cats/birds etc find their forever homes."
+    android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:layout_margin="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img1"
+        android:layout_marginEnd="-30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv2"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:backgroundTint="@android:color/transparent"
+        app:cardCornerRadius="80dp"
+        >
+        <ImageView
+
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/about1"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_below="@id/tv2"
+        android:layout_toLeftOf="@id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="For Free treatment of stray animal and birds and for activities of mobile food zone,"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:layout_margin="10dp"/>
+ <TextView
+        android:id="@+id/tv4"
+        android:layout_below="@id/tv3"
+        android:layout_toLeftOf="@id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone: 09898019059
+Phone: 09898499954"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:layout_margin="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img2"
+        android:layout_marginStart="-30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tv4"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:backgroundTint="@android:color/transparent"
+        app:cardCornerRadius="80dp"
+        >
+        <ImageView
+
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/about2"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+        android:id="@+id/img3"
+        android:layout_marginEnd="-30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/img1"
+            android:layout_marginTop="30dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:backgroundTint="@android:color/transparent"
+        app:cardCornerRadius="80dp"
+        >
+        <ImageView
+
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/about3"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

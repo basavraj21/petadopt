@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="true" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/imageview"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pet Details"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="breed"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:id="@+id/breed"/>
+
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sex"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sex"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:id="@+id/gender"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="desc"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:id="@+id/desc"/>
+
+        <View
+            android:layout_margin="10dp"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Owner Details"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="owner name"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/owner_name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="owner email"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:id="@+id/owner_email"/>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_location_on_24"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="owner addresss"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:id="@+id/owner_address"/>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat with owner"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:id="@+id/request"/>
+
+    </LinearLayout>
+
+</ScrollView>

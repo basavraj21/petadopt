@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:background="@drawable/edt_border"
+            android:id="@+id/pet_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="4pt"
+            android:layout_marginRight="4pt"
+            android:hint="Pet Name"/>
+
+        <EditText
+            android:background="@drawable/edt_border"
+            android:id="@+id/breed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="4pt"
+            android:layout_marginRight="4pt"
+            android:hint="Breed"/>
+
+        <EditText
+            android:background="@drawable/edt_border"
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="4pt"
+            android:layout_marginRight="4pt"
+            android:hint="Description"
+            android:gravity="start"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="4pt"
+            android:layout_marginRight="4pt">
+
+            <Spinner
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_border"
+                android:layout_weight="1"
+                android:entries="@array/list_category"
+                android:id="@+id/spinner_category"/>
+
+            <Spinner
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_border"
+                android:layout_weight="1"
+                android:entries="@array/list_gender"
+                android:id="@+id/spinner_gender"/>
+
+
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="4pt"
+            android:layout_marginRight="4pt"
+            android:text="Sterlized"
+            android:textColor="@color/black"
+            android:id="@+id/ch_sterlized"/>
+        <EditText
+            android:background="@drawable/edt_border"
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="4pt"
+            android:layout_marginRight="4pt"
+            android:hint="Address"
+            android:gravity="start"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="4pt"
+            android:layout_marginRight="4pt"
+            android:id="@+id/imageview"
+            android:src="@drawable/ic_baseline_camera_alt_24"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:id="@+id/post"/>
+    </LinearLayout>
+</ScrollView>

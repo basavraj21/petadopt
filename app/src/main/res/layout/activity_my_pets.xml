@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPetsActivity">
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginStart="5dp"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/card_all"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="30dp"
+            android:layout_weight="1"
+            app:checkedIcon="@null"
+            android:clickable="true"
+            android:focusable="true"
+            android:checkable="true"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="All"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:layout_weight="1"
+            android:id="@+id/card_dog"
+            android:layout_toRightOf="@id/card_all"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="30dp"
+            app:checkedIcon="@null"
+            android:clickable="true"
+            android:focusable="true"
+            android:checkable="true"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Dog"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:id="@+id/card_cat"
+            android:layout_toRightOf="@id/card_dog"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="30dp"
+            app:checkedIcon="@null"
+            android:clickable="true"
+            android:focusable="true"
+            android:checkable="true"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cat"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/card_fish"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="30dp"
+            android:layout_weight="1"
+            app:checkedIcon="@null"
+            android:clickable="true"
+            android:focusable="true"
+            android:checkable="true"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Fish"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:id="@+id/card_bird"
+            android:layout_toRightOf="@id/card_all"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="30dp"
+            app:checkedIcon="@null"
+            android:clickable="true"
+            android:focusable="true"
+            android:checkable="true"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Bird"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/linear5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/card_male"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="30dp"
+                android:layout_weight="1"
+                app:checkedIcon="@null"
+                android:clickable="true"
+                android:focusable="true"
+                android:checkable="true"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Male"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:id="@+id/card_female"
+                android:layout_toRightOf="@id/card_all"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="30dp"
+                app:checkedIcon="@null"
+                android:clickable="true"
+                android:focusable="true"
+                android:checkable="true"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Female"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:id="@+id/card_both"
+                android:layout_toRightOf="@id/card_all"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="30dp"
+                app:checkedIcon="@null"
+                android:clickable="true"
+                android:focusable="true"
+                android:checkable="true"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Both"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+</RelativeLayout>
+
+
+<androidx.recyclerview.widget.RecyclerView
+android:layout_marginTop="5dp"
+android:layout_below="@id/rel"
+android:id="@+id/recycler1"
+android:layout_width="match_parent"
+android:layout_height="match_parent"/>
+
+
+<ProgressBar
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_centerInParent="true"
+android:id="@+id/progress"/>
+
+</RelativeLayout>

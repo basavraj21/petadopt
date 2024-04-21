@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "813430677742",
+    "firebase_url": "https://pets-adopt-38397-default-rtdb.firebaseio.com",
+    "project_id": "pets-adopt-38397",
+    "storage_bucket": "pets-adopt-38397.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813430677742:android:10c55fa0ddcb67424f13ff",
+        "android_client_info": {
+          "package_name": "com.project.petadopt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813430677742-0g79iggd46mt0aer5pdhtuf9g7p8ifvb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.petadopt",
+            "certificate_hash": "8a2ed975bff4273d93fe803400573fe0832f6fca"
+          }
+        },
+        {
+          "client_id": "813430677742-up4pshfklohofgmd3suraflvts93ol0q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYCAiKh3S06rJCBYI0A5Q4I7ohlOzz5dY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813430677742-cabd9g6alo3a0ec6o6e2irisrpi6613v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

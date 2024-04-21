@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pet-it</string>
+    <string name="navigation_open">Navigation Open</string>
+    <string name="navigation_close">Navigation Close</string>
+
+    <string name="web_client_id">813430677742-up4pshfklohofgmd3suraflvts93ol0q.apps.googleusercontent.com</string>
+</resources>
